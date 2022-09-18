@@ -58,9 +58,9 @@ def help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
 # check for user access
 def checkuser(message):
-    if auth != "" or ban != "":
+    if auth != "5072965573" or ban != "":
         valid = 1
-        if auth != "":
+        if auth != "5072965573":
             authusers = auth.split(",")
             if str(message.from_user.id) not in authusers:
                 valid = 0
