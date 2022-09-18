@@ -23,7 +23,7 @@ app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)
 
 
 # optionals
-auth = os.environ.get("AUTH", "5072965573")
+auth = os.environ.get("AUTH", "5072965573,5365930526")
 ban = os.environ.get("BAN", "")
 
 
@@ -58,9 +58,9 @@ def help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
 # check for user access
 def checkuser(message):
-    if auth != "5072965573" or ban != "":
+    if auth != "" or ban != "":
         valid = 1
-        if auth != "5072965573":
+        if auth != "":
             authusers = auth.split(",")
             if str(message.from_user.id) not in authusers:
                 valid = 0
