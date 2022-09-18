@@ -32,11 +32,11 @@ ban = os.environ.get("BAN", "")
 def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__ Contact to Arpit Chauhan to get Authorized.',reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("Contact Arpit Chauhan from here", url="https://t.me/@ArpitChauhan0209")]]))
         return
 
-    app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader, you can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+    app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader made by Arpit Chauhan, you can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("Contact Arpit Chauhan from here", url="https://t.me/ArpitChauhan0209")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
@@ -58,9 +58,9 @@ def help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
 # check for user access
 def checkuser(message):
-    if auth != "" or ban != "":
+    if auth != "5072965573" or ban != "":
         valid = 1
-        if auth != "":
+        if auth != "5072965573":
             authusers = auth.split(",")
             if str(message.from_user.id) not in authusers:
                 valid = 0
