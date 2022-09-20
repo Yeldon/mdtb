@@ -23,7 +23,7 @@ app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)
 
 
 # optionals
-auth = os.environ.get("AUTH", "5072965573,5365930526")
+auth = os.environ.get("AUTH", "5365930526")
 ban = os.environ.get("BAN", "")
 
 
@@ -36,7 +36,7 @@ def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
         return
 
     app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader, you can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("You can make your own bot", url="@BotFather")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
