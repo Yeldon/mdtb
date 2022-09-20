@@ -23,7 +23,7 @@ app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)
 
 
 # optionals
-auth = os.environ.get("AUTH", "")
+auth = os.environ.get("AUTH", "5072965573,5365930526")
 ban = os.environ.get("BAN", "")
 
 
