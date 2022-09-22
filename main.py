@@ -230,7 +230,7 @@ def thumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
         app.send_message(message.chat.id, '**Thumbnail is Set**',reply_to_message_id=message.id)
 
     except:
-        app.send_message(message.chat.id, '**reply __/thumb__ to a image document of size less than 200KB**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**Reply __/thumb__ to a image document of size less than 200KB**',reply_to_message_id=message.id)
 
 
 # show thumb command
