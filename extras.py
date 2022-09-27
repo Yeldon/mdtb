@@ -14,7 +14,7 @@ def getdata(id):
     for ele in datalist:
         if ele.userid == id:
             return ele.mode
-    adddata(id,"5072965573")
+    adddata(id,"V")
     return 'D'
 
 def swap(id):
